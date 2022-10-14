@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js">
     <!-- gg font roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,6 @@
 </head>
 <body>
     <div class="app">
-        <div class="header">
             <div class="header__select">
                 <div class="header__select-content">
                     <p>Navigate to your country/region</p>
@@ -79,7 +79,7 @@
                 </a>    
             </div>
             <div class="header-container">
-                <div class="header-container__left-menu mg-10">
+                <div class="header-container__left-menu">
                     <div class="header-container__left-menu-item">
                         <strong>V league</strong>
                         <span>V league Institutional</span>
@@ -93,7 +93,7 @@
                         <span>V league Institutional</span>
                     </div>
                 </div>
-                <div class="header-container__right-menu mg-10">
+                <div class="header-container__right-menu">
                     <div class="header-container__group">
                         <div class="header-container__menu-group">
                             <div class="header-container__group-item">
@@ -103,28 +103,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-container-select-translate">
-                    <span class="header-container__select-language">
-                        <div class="header-container__dropdown">
-                            <div class="header-container__select-item">
+                <div class="header-container__login">
+                    <a href="" class="header-container__login-link">
+                        <box-icon type='solid' name='user' class="user-icon"></box-icon>
+                        <span>Login</span>               
+                    </a>
+                </div>
+                <div height="0" class="header-sub-menu">
+                    <div class="header-sub-menu-container">
+                        <div>
+                            <div class="header-sub-menu-grid">
                                 
                             </div>
                         </div>
-                        <!-- <select name="" id="select-language">
-                            <option value="ENGLISH">ENGLISH</option>
-                            <option value="VIETNAM">VIETNAM</option>
-                        </select> -->
-                    </span>
+                    </div>
+                </div>
+                <div class="header-logo__container">
+                    <div class="header-logo__container-main">
+                        <a href="https://vpf.vn/mobile/" class="header-logo__container-main-link"><img src="./img/logo_Vleague.png" alt="" class="header-logo__container-main-link-img"></a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="header-left-bottom">
+                <div class="header-left-bottom__container-menu">
+                    <div class="header-left-bottom__container-menu-item">
+                        
+                    </div>
+                </div>
+            </div>
 
         <div class="container"></div>
 
         <div class="footer"></div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

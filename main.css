@@ -8,7 +8,11 @@
 
 body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: 100%;
 }
 
 .app{
@@ -61,7 +65,7 @@ body{
 
 
 
-.btn{
+.btn-go{
     width: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -87,13 +91,13 @@ body{
     margin: 0 auto;
 }
 
-.btn:hover{
+.btn-go:hover{
     color: rgb(12, 27, 35);
     background: rgb(146, 218, 236);
     border-color: rgb(146, 218, 236);
 }
 
-.btn a{
+.btn-go > a{
     width: 100%;
     height: calc(34px);
     display: flex;
@@ -148,6 +152,11 @@ body{
 }
 
 /* header container */
+
+.main-header{
+    position: sticky;
+    width: 100%;
+}
 
 .header-container{
     position: sticky;
@@ -286,9 +295,13 @@ body{
     text-decoration: none;
 }
 
+.header-container__login-link > span {
+    color: var(--text-color);
+}
+
                         
 .header-logo__container-main-link-img:hover{
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .user-icon{
@@ -368,10 +381,122 @@ body{
 
 .header-left-bottom__container-menu-item{
     flex: 1 1 25%;
-    height: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     z-index: 20;
 }
+
+.header-left-bottom__container-menu-item-link{
+    width: 100%;
+    text-decoration: none;
+    color: #002834;
+    text-shadow: 0 0 #333;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+}
+
+.header-left-bottom__container-text{
+    height: 50px;
+    padding: 0.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: background-color 0.3s ease 0s;
+
+}
+
+
+.header-left-bottom__container-text-content{
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.header-left-bottom__container-text-content > span{
+    color: #fff;
+    margin-right: 80px;
+    font-weight: 600;
+}
+
+.header-left-bottom__container-text-content > span:hover{
+    background-color: aqua;
+    color: #002834;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.container-img{
+    width: 100%;
+}
+
+
+
+/* container body */
+
+.body{
+    width: 100%;
+}
+
+.container-wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    background-color: rgb(213, 215, 215);
+    color: rgb(37, 40, 42);
+    background-repeat: no-repeat;
+    background-image: url(https://assets.laliga.com/assets/public/beats/vertical.svg);
+    background-size: auto 100%;
+    width: 100%;
+}
+
+.container-wrapper-content{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+
+
+/* form login */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+  }
+  
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+  }
+

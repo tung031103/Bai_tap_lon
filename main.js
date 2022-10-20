@@ -1,0 +1,1 @@
+const getMainHeader = document.querySelector('')

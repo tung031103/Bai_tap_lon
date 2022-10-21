@@ -129,10 +129,10 @@ body{
 }
 
 .header__web-club > p{
-    display: block;
+    /* display: block; */
     font-size: 14px;
     color: rgb(69, 71, 77);
-    line-height: 1.5;
+    line-height: 48px;
 }
 
 .header__web-club-link{
@@ -164,10 +164,13 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    background-color: #000;
+    background-image: linear-gradient(to top, rgb(221, 122, 122) , rgb(255, 5, 5));
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
 }
 
 .nav-logo{
+    background-color: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -203,7 +206,7 @@ body{
 }
 
 .nav-list .nav-list-item:hover{
-    background-color: rgb(15, 100, 100);
+    background-color: rgb(21, 179, 158);
 }
 
 .nav-list .nav-list-item > a{
@@ -211,6 +214,16 @@ body{
     font-size: 18px;
     color: #fff;
     font-weight: 600;
+    padding: 20px;
+}
+
+.container-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-link:hover{
+    text-decoration: underline;
 }
 
 .container-img{
@@ -234,6 +247,11 @@ body{
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    text-align: justify;
+}
+
+.share{
+    float: left;
 }
 
 .share > span {
@@ -253,13 +271,15 @@ body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
-    background-color: rgb(213, 215, 215);
+    background-image: linear-gradient(to top, #FDFF00, rgb(233, 176, 72));
     color: rgb(37, 40, 42);
     background-repeat: no-repeat;
-    background-image: url(https://assets.laliga.com/assets/public/beats/vertical.svg);
+    /* background-image: url(https://assets.laliga.com/assets/public/beats/vertical.svg); */
     background-size: auto 100%;
     width: 100%;
 }
+
+
 
 .container-wrapper-content{
     width: 100%;
@@ -267,6 +287,8 @@ body{
     margin: 0px auto;
     position: relative;
 }
+
+
 
 
 

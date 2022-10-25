@@ -48,6 +48,14 @@ body{
     background-repeat: no-repeat;
 }
 
+@media (max-width: 900px){
+    .header__select{
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+}
+
 .header__select-content{
     width: 100%;
     max-width: 1296px;
@@ -75,7 +83,7 @@ body{
     padding-right: 20px;
     text-transform: uppercase;
     position: relative;
-    right: 496px;
+    right: 490px;
     max-width: 100%;
     display: inline-flex;
     -webkit-box-align: center;
@@ -226,6 +234,10 @@ body{
     background-color: rgb(21, 179, 158);
 }
 
+.nav-list-item > .active{
+    color: #55acee !important;
+}
+
 .nav-list .nav-list-item > a{
     text-decoration: none;
     font-size: 18px;
@@ -246,9 +258,6 @@ body{
 .container-img{
     width: 100%;
 }
-
-
-
 
 .text-desciption{
     margin-top: 10px;
@@ -285,15 +294,19 @@ body{
 }
 
 .share > span {
-    margin-right: 4px;
+    margin-right: 8px;
     font-weight: 500;
+    font-size: 16px;
 }
 
+.share > i{
+    font-size: 16px;
+}
 
 /* container body */
 
 .body{
-    padding: 184px 0;
+    padding: 184px 0 100px 0;
     width: 100%;
 }
 
@@ -325,7 +338,6 @@ body{
     align-items: center;
     margin-left: 5px;
     font-size: 16px;
-    line-height: 1;
 }
 
 .container-icon-main{
@@ -336,57 +348,32 @@ body{
     justify-content: center;
 }
 
-.container-icon-main > i{
-    margin-left: 6px;
-    text-align: center;
-    font-size: 16px;
-    color: currentcolor;
-    margin: 0px 5px;
+
+/* footer */
+
+.container-social__icon{
+    background-color: #d41819;
 }
 
-.container-social{
+.container-social__icon-list{
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    pointer-events: none;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    transition: opacity 0.3s ease 0s;
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 8px 12px);
-    z-index: 100;
-}
-
-.container-social-btn{
-    border-radius: 100% 0px 0px 100%;
-    background-color: white;
-    position: relative;
-    cursor: pointer;
-}
-
-.container-social-btn-icon{
-    width: 44px;
-    height: 44px;
-    display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 100%;
-    transition: background 0.3s ease 0s;
+    width: 100%;
+    list-style: none;
+
 }
 
-.container-social-btn-icon > i{
-    font-size: 20px;    
+.container-social__icon-list-item{
+    line-height: 50px;
+    height: 50px;
+    margin-right: 20px;
 }
 
-.container-social-btn-icon > i::before{
-    color: #55acee;
+.container-social__icon-link{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* form login */

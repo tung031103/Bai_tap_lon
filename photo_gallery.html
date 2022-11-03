@@ -4,16 +4,40 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/logo_Vleague.png" type="image/x-icon">
 	<link rel="stylesheet" href="./main.css">
 	<link rel="stylesheet" href="./base.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<title>V.league</title>
 </head>
 <body>
+	<nav class=" hder d-flex justify-content-between">
+        <div class="logo">
+            <img src="./img/Logo_VPF.png" alt="" width="50px" height="50px">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">Statistic</a>
+            </li>
+            <li>
+                <a href="./clubs.html">Clubs</a>
+            </li>
+            <li>
+                <a href="./login.html">Login</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 	<input type="radio" name="photos" id="check1" checked>
 	<input type="radio" name="photos" id="check2">
 	<input type="radio" name="photos" id="check3">
-	<input type="radio" name="photos" id="check4">
 	<div class="container-gallery">
 		<h1>Our Photo Gallery</h1>
 		<div class="top-content">
@@ -52,7 +76,7 @@
 			</div>
 			<div class="pic club">
 				<img src="./img/Thanh Hoa.jpg" alt="">
-			</div>
+				</div>
 			<div class="pic nice">
 				<img src="./img/Hue-BaRia2022-06.jpg" alt="">
 			</div>
@@ -98,7 +122,17 @@
 	    </div>
 	  </div>
 	</div>
-
+	<div class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">
+            V.League @ 2022
+        </p>
+    </div>
 </body>
 <script src="./main.js"></script>
 </html>
